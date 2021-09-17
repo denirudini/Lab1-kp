@@ -1,0 +1,37 @@
+body{
+	/*background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tri.edu.au%2Ffilething%2Fget%2F92%2Flife_science_laboratory_glassware.jpg&f=1&nofb=1");*/
+  background: #e7ecf0;
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+header{
+    background: #fff;
+  }
+
+ 
+.carousel{
+  margin-bottom: 30px;
+}
+
+.breadcrumb{
+  background: #293d50;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 2px;
+  margin-top: -1rem;
+  
+}
+
+.breadcrumb a {
+  color:white;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+  color: white;
+
+}
+
+a:hover{
+  color: #ffff00;
+  text-decoration: none;
+}

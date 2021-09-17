@@ -1,0 +1,24 @@
+.carousel{
+    margin-top: 0;
+}
+
+
+.breadcrumb{
+  background: #293d50;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 0px;
+}
+  .breadcrumb a {
+    color:white;
+  }
+  .breadcrumb-item + .breadcrumb-item::before{
+    color: white;
+  
+  }
+  
+  a:hover{
+    color:#ffff00;
+    text-decoration: none;
+  }
+  
