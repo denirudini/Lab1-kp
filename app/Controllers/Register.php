@@ -69,7 +69,7 @@ class Register extends BaseController
             'email' => $_POST['email'],
             'password' => password_hash($_POST['password'], PASSWORD_BCRYPT)
         ]);
-        return redirect()->to('/login');
+        return redirect()->to('views/login');
         
     }
 

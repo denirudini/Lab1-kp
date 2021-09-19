@@ -79,7 +79,7 @@
                   </div>
                   <div class="bottom my-3">
                     <a class="small" href="forgot.html">Lupa Kata Sandi?</a>
-                    <a class="small" href="<?= base_url('page/register') ?>">Buat Akun Sekarang</a>
+                    <a class="small" href="<?= base_url('register') ?>">Buat Akun Sekarang</a>
                   </div>
                 </form>
                 <div>&nbsp;</div>

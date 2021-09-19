@@ -13,7 +13,7 @@
 
          <a class="nav-item nav-link active" href="contact.html">Kontak</a>
          <a class="nav-item nav-link" href="#">Info</a>
-         <a class="nav-item btn btn-primary tombol" href="<?= base_url('page/login') ?>">Masuk</a>
+         <a class="nav-item btn btn-primary tombol" href="<?= base_url('Login') ?>">Masuk</a>
        </div>
      </div>
    </div>
