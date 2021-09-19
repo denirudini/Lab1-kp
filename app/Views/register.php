@@ -72,7 +72,7 @@
                         <span class="input-group-text"><i class="ti-user"></i></span>
                       </div>
                       <label for="no_hp"></label>
-                      <input type="text" id="no_hp" class="form-control input-login" placeholder="Nomer Handphone">
+                      <input type="text" id="no_hp" name="no_hp" class="form-control input-login" placeholder="Nomer Handphone">
                     </div>
                     
                     <div class="input-group mb-3">
@@ -80,13 +80,13 @@
                         <span class="input-group-text"><i class="ti-email"></i></span>
                       </div>
                       <label for="email"></label>
-                      <input type="text" id= "email" class="form-control input-login" placeholder="Email">
+                      <input type="text" id= "email" name="email" class="form-control input-login" placeholder="Email">
                     </div>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ti-lock"></i></span>
                       </div>
-                      <input type="password" class="form-control input-login" placeholder="Kata sandi">
+                      <input type="password" name="password" class="form-control input-login" placeholder="Kata sandi">
                     </div>
                     <div class="form-group">
                       <label class="mz-check">
@@ -96,7 +96,7 @@
                     </label>
                     </div>
                     <div class= "text-center">                        
-                              <a href="login.html" type="submit" class="btn-reg form-control">Daftar</a>
+                              <button type="submit" class="btn-reg btn-small form-control">Daftar</button>
                             </div>
                     <div class="bottom">
                       <k><a class="small" href="login.html"> Sudah Punya Akun? Masuk</a></k>

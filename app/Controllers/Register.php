@@ -6,15 +6,20 @@ use App\Models\UserModel;
 
 class Register extends BaseController
 {
+    /**
+	 * Instance of the main Request object.
+	 *
+	 * @var HTTP\IncomingRequest
+	 */
+	protected $request;
+
     public function index()
     {
         return view('register');
         
     }
 
-    public function process()
-    {
-        
+    public function process(){
         if (!$this->validate([
             'nama' => [
                 'rules' => 'required|min_length[4]|max_length[20]|is_unique[tb_users.nama]',
@@ -35,7 +40,7 @@ class Register extends BaseController
                 ]
             ],
             'email' => [
-                'rules' => 'required|min_length[4]|max_length[20]|is_unique[tb_users.email]',
+                'rules' => 'required|min_length[4]|max_length[100]|is_unique[tb_users.email]',
                 'errors' => [
                     'required' => '{field} Harus diisi',
                     'min_length' => '{field} Minimal 4 Karakter',
@@ -55,17 +60,18 @@ class Register extends BaseController
             session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }
+
+
         $tb_users = new UserModel();
         $tb_users->insert([
-            'nama' => $this->request->getVar('nama'),
-            'no_hp' => $this->request->getVar('no_hp'),
-            'email' => $this->request->getVar('email'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT)
+            'nama' => $_POST['nama'],
+            'no_hp' => $_POST['no_hp'],
+            'email' => $_POST['email'],
+            'password' => password_hash($_POST['password'], PASSWORD_BCRYPT)
         ]);
         return redirect()->to('/login');
         
     }
-    
+
 }
 
-?>
