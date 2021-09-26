@@ -99,7 +99,7 @@
                               <button type="submit" class="btn-reg btn-small form-control">Daftar</button>
                             </div>
                     <div class="bottom">
-                      <k><a class="small" href="login.html"> Sudah Punya Akun? Masuk</a></k>
+                      <k><a class="small" href="<?= base_url('page/login') ?>"> Sudah Punya Akun? Masuk</a></k>
                     </div>
                         
                   </form>

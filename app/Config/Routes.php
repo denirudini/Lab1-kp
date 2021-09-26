@@ -36,7 +36,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/register', 'Register::index');
 $routes->post('/register/process', 'Register::process');
 // $routes->get('/info', 'Page::about');
-// $routes->get('/masuk', 'Page::login');
+ $routes->get('/masuk', 'Page::login');
 // $routes->get('/kontak', 'Page::contact');
 // $routes->get('/pengumuman', 'Page::pengumuman');
 // $routes->get('/alur', 'Page::alur');
